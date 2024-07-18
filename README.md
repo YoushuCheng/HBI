@@ -2,7 +2,7 @@
 A hierarchical Bayesian interaction model to estimate cell-type-specific methylation quantitative trait loci incorporating priors from cell-sorted bisulfite sequencing data
 
 ## Tutorial
-Please run Rscript HBI.R [file for DNA methylation] [file for genotype] [file for cell type proportions] [file for covariates] [file for priors] [path for outputs]
+Please run Rscript HBI.R [file for phenotype (DNA methylation)][Phenotype (CpG) name] [file for genotype] [file for cell type proportions] [file for covariates] [file for priors] [path for outputs]
 
 - Expression file should not contain col.names and row.names
 
