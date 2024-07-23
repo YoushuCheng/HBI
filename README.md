@@ -4,12 +4,16 @@ A hierarchical Bayesian interaction model to estimate cell-type-specific methyla
 ## Tutorial
 Please run 
 ```
-Rscript HBI.R [file for phenotype/DNA methylation] [Phenotype/CpG name] [file for genotype] [file for cell type proportions] [file for covariates] [path for outputs]
+Rscript HBI.R [file for phenotype/DNA methylation] [Phenotype/CpG name] [file for genotype] [file for cell type proportions] [file for covariates] [path for outputs] \
+distance=500000 \
+b_vector="0.2,0.2,0.2" 
 ```
 
 If the priors from CTS data (in a small group of samples) are available, please run 
 ```
-Rscript HBI_cts_prior.R [file for phenotype/DNA methylation] [Phenotype/CpG name] [file for genotype] [file for cell type proportions] [file for covariates] [file for priors] [path for outputs]
+Rscript HBI_cts_prior.R [file for phenotype/DNA methylation] [Phenotype/CpG name] [file for genotype] [file for cell type proportions] [file for covariates] [file for priors] [path for outputs] \
+distance=500000 \
+b_vector="0.2,0.2,0.2" 
 ```
 
 - Expression file should not contain col.names and row.names
