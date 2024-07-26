@@ -2,13 +2,14 @@
 A hierarchical Bayesian interaction model to estimate cell-type-specific methylation quantitative trait loci incorporating priors from cell-sorted bisulfite sequencing data
 
 ## Tutorial
-Please run 
+If only bulk data is available, please run 
 ```
 Rscript HBI.R [file for phenotype/DNA methylation] [Phenotype/CpG name] [file for genotype] [file for cell type proportions] [file for covariates] [path for outputs] \
 distance=500000
 ```
 
-If CTS data (in a small group of samples) are available, to incorporate the prior, please run the following 2 steps:
+
+If CTS data (in a small group of samples) is available, to incorporate the prior, please run the following 2 steps:
 
 1. Create the prior data from CTS CpG-SNP associations, which have been obtained using the CTS data:
 ```
