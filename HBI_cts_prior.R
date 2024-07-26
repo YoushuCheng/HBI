@@ -132,13 +132,6 @@ Covar.file <- as.character(args[5])
 Prior.file <- as.character(args[6])
 output.file <- as.character(args[7])
 
-#phen.file <- '/gpfs/gibbs/pi/zhao/yc769/cell_type_meQTL/Algorithm/phen.txt'
-#probe = 'cg08730728'
-#geno.file <- '/gpfs/ycga/project/xu_ke/yc769/WIHS_Michigan//WIHS_vcf_chr22.vcf'
-#W.file <- '/gpfs/gibbs/pi/zhao/yc769/cell_type_meQTL/Algorithm/CT_prop.txt'
-#Covar.file <- '/gpfs/gibbs/pi/zhao/yc769/cell_type_meQTL/Algorithm/covar.txt'
-#Prior.file <- '/gpfs/gibbs/pi/zhao/yc769/cell_type_meQTL/Algorithm/prior_adj.txt'
-
 vcf  = as.data.frame(fread(geno.file, skip = 6, header=T))
 region = vcf[,c('#CHROM','POS','ID','REF','ALT')]
 df=as.data.frame(t(vcf))
