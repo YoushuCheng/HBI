@@ -7,7 +7,8 @@ If only bulk data is available, please run
 Rscript HBI.R [file for phenotype/DNA methylation] [Phenotype/CpG name] [file for genotype] [file for cell type proportions] [file for covariates] [path for outputs] \
 distance=500000
 ```
-
+- Expression file should not contain col.names and row.names
+- 
 
 If CTS data (in a small group of samples) is available, to incorporate the prior, please run the following 2 steps:
 
