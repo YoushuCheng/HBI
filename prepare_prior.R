@@ -28,9 +28,6 @@ Prior.file <- as.character(args[1])
 W.file <- as.character(args[2])
 output.file <- as.character(args[3])
 
-#Prior.file <- '/gpfs/gibbs/pi/zhao/yc769/cell_type_meQTL/Algorithm/Prior.txt'
-#W.file <- '/gpfs/gibbs/pi/zhao/yc769/cell_type_meQTL/Algorithm/CT_prop.txt'
-
 W = as.data.frame(fread(W.file, header=T))
 prior = as.data.frame(fread(Prior.file, header=T))
 CT = colnames(W)[-1]
