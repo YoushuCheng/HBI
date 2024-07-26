@@ -8,7 +8,15 @@ Rscript HBI.R [file for phenotype/DNA methylation] [Phenotype/CpG name] [file fo
 distance=500000
 ```
 
-If the priors from CTS data (in a small group of samples) are available, please run 
+If CTS data (in a small group of samples) are available, to incorporate the prior, please run the following 2 steps:
+
+1. Create the prior data from CTS CpG-SNP associations, which have been obtained using the CTS data:
+```
+Rscript prepare_prior.r [file for priors] [file for cell type proportions] [path for outputs] \
+Npair=1000000
+```
+
+2. Run the HBI algorithm with prior
 ```
 Rscript HBI_cts_prior.R [file for phenotype/DNA methylation] [Phenotype/CpG name] [file for genotype] [file for cell type proportions] [file for covariates] [file for priors] [path for outputs] \
 distance=500000
