@@ -72,7 +72,7 @@ Rscript HBI_cts_prior.R [file for phenotype/DNA methylation] [Phenotype/CpG name
 distance=500000
 ```
 
-- Expression file should not contain col.names and row.names
+- **file for cell type proportions:** 
 
 - Batch index file should not contain col.names and row.names
 
