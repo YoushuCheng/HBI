@@ -7,7 +7,7 @@ If only bulk data is available, please run
 Rscript HBI.R [file for phenotype/DNA methylation] [Phenotype/CpG name] [file for genotype] [file for cell type proportions] [file for covariates] [path for outputs] \
 distance=500000
 ```
-- Expression file should not contain col.names and row.names
+- **File for phenotype/DNA methylation:**
 ```
         probe       BP CHR        id_1       id_2        id_3       id_4
 1  cg08730728 37252593  22 -5.48097920 -5.7615145 -5.84497641 -5.7453667
@@ -20,7 +20,7 @@ distance=500000
 8  cg24159891 24989071  22 -4.93760662 -5.3396283 -5.14419473 -4.6738503
 9  cg03028106 39269216  22 -1.60039254 -2.2072612 -1.71083586 -1.5165214
 10 cg16579372 20378862  22 -4.43459049 -4.5295952 -4.88660086 -4.7936687
-
+...
 ```
 - 
 
