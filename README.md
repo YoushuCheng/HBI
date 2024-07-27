@@ -7,7 +7,7 @@ If only bulk data is available, please run
 Rscript HBI.R [file for phenotype/DNA methylation] [Phenotype/CpG name] [file for genotype] [file for cell type proportions] [file for covariates] [path for outputs] \
 distance=500000
 ```
-- **File for phenotype/DNA methylation:**
+- **File for phenotype/DNA methylation:** Each row represent a phenotype (CpG site in DNA methylations), and the first three columns are `probe`,`BP`,`CHR`, the remaining columns represent individuals. Column names are needed.
 ```
         probe       BP CHR        id_1       id_2        id_3       id_4
 1  cg08730728 37252593  22 -5.48097920 -5.7615145 -5.84497641 -5.7453667
@@ -16,10 +16,6 @@ distance=500000
 4  cg21855135 42353933  22 -2.55987152 -2.1778738 -2.75530165 -2.6189098
 5  cg04371950 45602057  22 -0.07503705  0.1965098 -0.09236402 -0.5789538
 6  cg03070533 35653394  22 -6.30378075 -6.4641081 -6.42553520 -6.3879443
-7  cg14106119 42084222  22 -6.45113815 -6.2352652 -6.37562358 -6.4511382
-8  cg24159891 24989071  22 -4.93760662 -5.3396283 -5.14419473 -4.6738503
-9  cg03028106 39269216  22 -1.60039254 -2.2072612 -1.71083586 -1.5165214
-10 cg16579372 20378862  22 -4.43459049 -4.5295952 -4.88660086 -4.7936687
 ...
 ```
 - 
