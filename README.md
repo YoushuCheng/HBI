@@ -72,7 +72,7 @@ Npair=1000000
 Rscript HBI_cts_prior.R [file for phenotype/DNA methylation] [Phenotype/CpG name] [file for genotype] [file for cell type proportions] [file for covariates] [file for adjusted priors] [path for outputs] \
 distance=500000
 ```
-- **file for adjusted priors:** This is the output for the step 1 `prepare_prior.r`.
+- **file for adjusted priors:** This is the output from the step 1 `prepare_prior.r`.
 ```
        probe       snp chr REF ALT      p_CD4T beta_CD4T      p_CD8T beta_CD8T
 1 cg00045070 rs2479409   1   A   G 1.13095e-12   7.22779 2.95211e-14   7.37828
