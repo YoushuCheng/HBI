@@ -43,7 +43,7 @@ distance=500000
 ...
 ```
 - **path for outputs:** For example, `/Mypath/result.txt`.
-- **Optional arguments:** `distance` specifies the window size of QTLs to be tested. The default value is `500000`, which includes SNPs within 500kb upstream and 500kb downstream to the CpG site. `b_vector` specifies the degree of shrinkage of each cell type. The default is `b_vector="0.2,0.2,0.2,0.2,0.2"` (the length must equal to the number of cell types).
+- **Optional arguments:** `distance` specifies the window size of QTLs to be tested. The default value is `distance=500000`, which includes SNPs within 500kb upstream and 500kb downstream to the CpG site. `b_vector` specifies the degree of shrinkage of each cell type. The default is `b_vector="0.2,0.2,0.2,0.2,0.2"` (the length must equal to the number of cell types).
 
 If CTS data (in a small group of samples) is available, to incorporate the prior, please run the following 2 steps:
 
@@ -52,6 +52,19 @@ If CTS data (in a small group of samples) is available, to incorporate the prior
 Rscript prepare_prior.r [file for priors] [file for cell type proportions] [path for outputs] \
 Npair=1000000
 ```
+- **file for priors:** The first five columns should be `probe`,`snp`,`chr`,`REF`,`ALT`. The remaining columns should be p-values and beta for each cell type with CTS data (not necessarily include all cell types in the file for cell type proportions). Column names are needed.
+```
+       probe       snp chr REF ALT      p_CD4T beta_CD4T      p_CD8T beta_CD8T
+1 cg00045070 rs2479409   1   A   G 1.13095e-12   7.22779 2.95211e-14   7.37828
+2 cg00345083 rs7517857   1   A   G 6.71566e-12   5.92522 3.45804e-10   5.24358
+3 cg02890259  rs945417   1   G   C 3.13387e-13   7.97823 1.25687e-12   6.59110
+4 cg02890259  rs945420   1   A   G 3.13387e-13   7.97823 1.25687e-12   6.59110
+5 cg02890259  rs945421   1   C   T 3.13387e-13   7.97823 1.25687e-12   6.59110
+6 cg02890259 rs6669935   1   G   C 1.05970e-09   7.48507 3.93825e-10   6.50018
+...
+```
+- **file for cell type proportions:** This is the same input as that in `HBI.R`.
+- **Optional arguments:** 
 
 2. Run the HBI algorithm with prior
 ```
