@@ -64,7 +64,7 @@ Npair=1000000
 ...
 ```
 - **file for cell type proportions:** This is the same input as that in `HBI.R`.
-- **Optional arguments:** `Npair` specifies the total number of SNP-CpG pairs in the prior data, and the default value is the number of rows of the prior data. 
+- **Optional arguments:** `Npair` specifies the total number of SNP-CpG pairs in the prior data, and the default value is the number of rows of the prior data. `p_adj_method` specifies the method used to adjust the prior data, and the default is `p_adj_method=bonferroni`. Other options can be `p_adj_method=fdr`,`p_adj_method=BY`.
 
 2. Run the HBI algorithm with prior
 ```
