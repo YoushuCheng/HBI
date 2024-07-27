@@ -43,6 +43,7 @@ distance=500000
 ...
 ```
 - **path for outputs:** For example, `/Mypath/result.txt`.
+- **Optional arguments:** `distance` specifies the window size of QTLs to be tested. The default value is `500000`, which includes SNPs within 500kb upstream and 500kb downstream to the CpG site. `b_vector` specifies the degree of shrinkage of each cell type. The default is `b_vector="0.2,0.2,0.2,0.2,0.2"` (the length must equal to the number of cell types).
 
 If CTS data (in a small group of samples) is available, to incorporate the prior, please run the following 2 steps:
 
