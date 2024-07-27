@@ -64,7 +64,7 @@ Npair=1000000
 ...
 ```
 - **file for cell type proportions:** This is the same input as that in `HBI.R`.
-- **Optional arguments:** 
+- **Optional arguments:** `Npair` specifies the total number of SNP-CpG pairs in the prior data, and the default value is the number of rows of the prior data. 
 
 2. Run the HBI algorithm with prior
 ```
