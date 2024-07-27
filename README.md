@@ -2,7 +2,7 @@
 A hierarchical Bayesian interaction model to estimate cell-type-specific methylation quantitative trait loci incorporating priors from cell-sorted bisulfite sequencing data
 
 ## Tutorial
-If only bulk data is available, please run 
+### If only bulk data is available, please run 
 ```
 Rscript HBI.R [file for phenotype/DNA methylation] [Phenotype/CpG name] [file for genotype] [file for cell type proportions] [file for covariates] [path for outputs] \
 distance=500000
@@ -46,7 +46,7 @@ distance=500000
 - **Optional arguments:** `distance` specifies the window size of QTLs to be tested. The default value is `distance=500000`, which includes SNPs within 500kb upstream and 500kb downstream to the CpG site. `b_vector` specifies the degree of shrinkage of each cell type. The default is `b_vector="0.2,0.2,0.2,0.2,0.2"` (the length must equal to the number of cell types).
 
 
-If CTS data (in a small group of samples) is available, to incorporate the prior, please run the following 2 steps:
+### If CTS data (in a small group of samples) is available, to incorporate the prior, please run the following 2 steps:
 
 1. Create the prior data from CTS CpG-SNP associations, which have been obtained using the CTS data:
 ```
