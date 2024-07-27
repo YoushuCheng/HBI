@@ -18,7 +18,7 @@ distance=500000
 6  cg03070533 35653394  22 -6.30378075 -6.4641081 -6.42553520 -6.3879443
 ...
 ```
-- 
+- **Phenotype/CpG name:** The CpG to be tested should be specified, for example, `cg08730728`.
 
 If CTS data (in a small group of samples) is available, to incorporate the prior, please run the following 2 steps:
 
