@@ -19,7 +19,7 @@ distance=500000
 ...
 ```
 - **Phenotype/CpG name:** The CpG to be tested should be specified, for example, `cg08730728`.
-- **file for genotype:** Genotype file in VCF format.
+- **file for genotype:** Genotype file in VCF format. The individual IDs in the VCF file should match with other files.
 - **file for cell type proportions:** The first column is `IID`, each of the remaining columns represents one cell type. Column names are needed.
 ```
    IID      CD8T       CD4T       Mono        NK      Bcell
